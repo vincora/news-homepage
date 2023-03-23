@@ -1,16 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-size: 15px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     color: hsl(236, 13%, 42%);
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
 }
 
 .wrapper{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
-    
 }
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -24,17 +38,91 @@ body{
     }
     &__nav{
         display: flex;
-        list-style: none;
-        gap: 20px;
+        gap: 1.5em;
     }
     &__nav-item{
-        a{
-            color: inherit;
-            text-decoration: none;
-            cursor: pointer;
-            &:hover{
-                color: hsl(5, 85%, 63%);
-            }
+        a:hover{
+            color: hsl(5, 85%, 63%);
         }
+    }
+}
+.main-section{
+    margin-top: 30px;
+    display: flex;
+    gap: 1.5em;
+}
+.main-block{
+    width: 70%;
+    
+    &__img{
+        width: 100%;
+    }
+    &__description{
+        margin-top: 30px;
+        display: flex;
+        gap: 2.5em;
+    }
+    &__title{
+        width: 47%;
+        font-size: 3em;
+        line-height: 1;
+        font-weight: 800;
+        color: hsl(240, 100%, 5%);
+    }
+    &__text-wrapper{
+        width: 53%;
+    }
+    &__text{
+        line-height: 1.4;
+
+    }
+    &__link{
+        display: block;
+        width: fit-content;
+        text-transform: uppercase;
+        font-size: 0.75em;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding: 1em 2em;
+        background-color: hsl(5, 85%, 63%);
+        color: #fff;
+        margin-top: 2em;
+        &:hover{
+            background-color: hsl(240, 100%, 5%);
+        }
+    }
+}
+.new-articles{
+   width: 30%;
+   background-color: hsl(240, 100%, 5%);
+   padding: 1.5em 1em;
+   &__title{
+    color: hsl(35, 77%, 62%);
+    font-size: 2em;
+   }
+}
+.articles-list{
+    
+
+    &__item{
+        color: hsl(233, 8%, 79%);
+        padding: 1.5em 0;
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        cursor: pointer;
+        &:last-child{
+            border-bottom: none;
+        }
+
+    }
+
+    &__item-title{
+        font-size: 1.15em;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 1em;
+    }
+
+    &__item:hover &__item-title{
+        color: hsl(35, 77%, 62%);
     }
 }

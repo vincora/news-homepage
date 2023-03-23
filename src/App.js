@@ -23,32 +23,42 @@ function App() {
           </nav>
         </header>
         <main>
-          <section>
-            <article>
-              {/* <img src={img} alt="web 3.0 illustration" /> */}
-              <h1>The Bright Future of Web 3.0?</h1>
-              <p>  We dive into the next evolution of the web that claims to the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-              <a href="#">Read more</a>
-            </article>
-            <div>
-              <h2>New</h2>
-              <ul>
-                <li>
-                  <h3>Hydrogen VS Electric Cars</h3>
-                  <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <section className='main-section'>
+            <div className='main-block'>
+              <img src={img} alt="web 3.0 illustration" className='main-block__img'/>
+              <div className="main-block__description">
+                <h1 className='main-block__title'>The Bright Future of Web 3.0?</h1>
+                <div className="main-block__text-wrapper">
+                  <p className='main-block__text'>  We dive into the next evolution of the web that claims to the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                  <a href="#" className='main-block__link'>Read more</a>
+                </div>
+              </div>
+            </div>
+            <div className='new-articles'>
+              <h2 className='new-articles__title'>New</h2>
+              <ul className='articles-list'>
+                <li className='articles-list__item'>
+                  <a href="">
+                    <h3 className='articles-list__item-title'>Hydrogen VS Electric Cars</h3>
+                    <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                  </a>
                 </li>
-                <li>
-                  <h3>The Downsides of AI Artistry</h3>
-                  <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                <li className='articles-list__item'>
+                  <a href="">
+                    <h3 className='articles-list__item-title'>The Downsides of AI Artistry</h3>
+                    <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                  </a>
                 </li>
-                <li>
-                  <h3>Is VC Funding Drying Up?</h3>
-                  <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                <li className='articles-list__item'>
+                  <a href="">
+                    <h3 className='articles-list__item-title'>Is VC Funding Drying Up?</h3>
+                    <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                  </a>
                 </li>
               </ul>
             </div>
           </section>
-          <section>
+          <section className='bottom-section'>
             <article>
               <img src={retro} alt="retro pcs" />
               <div>01</div>
