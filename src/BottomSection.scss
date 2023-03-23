@@ -1,0 +1,22 @@
+.bottom-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+    margin-bottom: 30px;
+}
+.article{
+    display: flex;
+    gap: 1em;
+    &__picture{
+        height: 100px;
+    }
+    &__text-wrapper{
+
+    }
+    &__number{
+
+    }
+    &__title{
+
+    }
+}

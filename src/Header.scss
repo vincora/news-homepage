@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    &__logo{
+        width: 40px;
+        img {
+            width: 100%;
+        }
+    }
+    &__nav{
+        display: flex;
+        gap: 2.25em;
+    }
+    &__nav-item{
+        a:hover{
+            color: hsl(5, 85%, 63%);
+        }
+    }
+}

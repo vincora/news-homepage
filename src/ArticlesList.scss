@@ -1,0 +1,24 @@
+.articles-list{
+    
+    &__item{
+        color: hsl(233, 8%, 79%);
+        padding: 1.5em 0;
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        cursor: pointer;
+        &:last-child{
+            border-bottom: none;
+        }
+
+    }
+
+    &__item-title{
+        font-size: 1.15em;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 1em;
+    }
+
+    &__item:hover &__item-title{
+        color: hsl(35, 77%, 62%);
+    }
+}
