@@ -8,10 +8,13 @@
     }
     &__nav{
         display: flex;
-        gap: 2.25em;
+        gap: 1em;
     }
     &__nav-item{
-        a:hover{
+        padding: 1em;
+        cursor: pointer;
+
+        &:hover{
             color: hsl(5, 85%, 63%);
         }
     }

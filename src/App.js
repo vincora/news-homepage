@@ -9,7 +9,7 @@ function App() {
     <div>
       <div className="wrapper">
         <Header/>
-        <main className='main-block'>
+        <main>
           <MainSection />
           <BottomSection />
         </main>
