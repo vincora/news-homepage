@@ -1,0 +1,27 @@
+.article{
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+    
+    &__picture{
+        width: 25%;
+    }
+    &__text-wrapper{
+
+    }
+    &__number{
+        font-size: 1.5em;
+        font-weight: 800;
+        color:hsl(233, 8%, 79%);
+    }
+    &__title{
+        font-size: 1em;
+        font-weight: 800;
+        color: hsl(240, 100%, 5%);
+        padding: 0.75em 0;
+    }
+
+    &:hover &__title{
+        color: hsl(5, 85%, 63%);
+    }
+}

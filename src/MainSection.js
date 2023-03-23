@@ -1,6 +1,7 @@
 import React from 'react';
 import MainBlock from './MainBlock';
 import NewArticles from './NewArticles';
+import './MainSection.scss';
 
 
 const MainSection = () => {

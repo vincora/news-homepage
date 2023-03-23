@@ -1,5 +1,6 @@
 import React from 'react';
 import img from './assets/images/image-web-3-desktop.jpg';
+import './MainBlock.scss';
 
 const MainBlock = () => {
   return (

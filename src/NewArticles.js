@@ -1,5 +1,6 @@
 import React from 'react';
 import ArticlesList from './ArticlesList';
+import './NewArticles.scss';
 
 const NewArticles = () => {
   return (
