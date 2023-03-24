@@ -1,13 +1,12 @@
 .article{
     display: flex;
+    align-items: flex-start;
     gap: 1em;
     cursor: pointer;
     
     &__picture{
-        width: 25%;
-    }
-    &__text-wrapper{
-
+        width: 30%;
+        object-fit: contain;
     }
     &__number{
         font-size: 1.5em;
