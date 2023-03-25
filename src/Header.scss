@@ -91,5 +91,8 @@
     &_open &__icon-open{
         display: none;
     }
+}
 
+body:has(.burger-menu_open) {
+    overflow: hidden;
 }
