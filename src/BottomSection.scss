@@ -3,4 +3,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5em;
     padding-bottom: 30px;
+    @media (max-width: 750px) {
+        display: flex;
+        flex-direction: column;
+    }
 }

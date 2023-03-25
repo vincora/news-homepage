@@ -2,4 +2,11 @@
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
     gap: 1.5em;
+    @media (max-width: 750px) {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5em;
+    }
 }
+
+

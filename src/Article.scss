@@ -5,11 +5,11 @@
     cursor: pointer;
     
     &__picture{
-        width: 30%;
+        width: 25%;
         object-fit: contain;
     }
     &__number{
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: 800;
         color:hsl(233, 8%, 79%);
     }
@@ -17,7 +17,10 @@
         font-size: 1em;
         font-weight: 800;
         color: hsl(240, 100%, 5%);
-        padding: 0.75em 0;
+        padding: 0.5em 0;
+    }
+    &__text{
+        padding-bottom: 0.5em;
     }
 
     &:hover &__title{

@@ -8,7 +8,7 @@ const Article = ({img, number, title, text}) => {
         <div className="article__text-wrapper">
             <div className='article__number'>{number}</div>
             <h3 className='article__title'>{title}</h3>
-            <p>{text}</p>
+            <p className='article__text'>{text}</p>
         </div>
     </article>
   )
